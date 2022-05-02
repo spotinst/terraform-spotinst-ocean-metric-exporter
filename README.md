@@ -1,4 +1,4 @@
-# [NAME] Terraform Module
+# Spot Ocean Metrics Exporter Terraform Module
 
 Short description of the module.
 
@@ -22,10 +22,9 @@ Short description of the module.
 ## Usage
 
 ```hcl
-module "[NAME]" {
-  source = "spotinst/[NAME]/spotinst"
-
-  ...
+module "ocean-metrics-exporter" {
+  source = "spotinst/ocean-metrics-exporter/spotinst"
+  
 }
 ```
 

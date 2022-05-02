@@ -1,11 +1,6 @@
-// spotinst/[NAME]
-
-variable "spotinst_token" {
+// spotinst/ocean-metrics-exporter
+variable "image_tag" {
   type        = string
-  description = "Spot Personal Access token"
-}
-
-variable "spotinst_account" {
-  type        = string
-  description = "Spot account ID"
+  description = "(Optional) Image tag"
+  default     = null
 }
