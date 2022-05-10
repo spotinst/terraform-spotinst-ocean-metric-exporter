@@ -4,7 +4,7 @@ provider "helm" {
   }
 }
 
-module "ocean-metrics-exporter" {
+module "ocean-metric-exporter" {
   source            = "../.."
   image_pull_policy = "Always"
   image_tag         = "1.0.0-beta"
