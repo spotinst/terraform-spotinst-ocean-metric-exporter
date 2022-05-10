@@ -75,7 +75,7 @@ No modules.
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | (Optional) Kubernetes namespace where the components should be installed. | `string` | `null` | no |
 | <a name="input_replica_count"></a> [replica\_count](#input\_replica\_count) | (Optional) Replicas. | `number` | `null` | no |
 | <a name="input_secret_name"></a> [secret\_name](#input\_secret\_name) | (Optional) Secret name | `string` | `null` | no |
-| <a name="input_service_create"></a> [service\_create](#input\_service\_create) | (Optional) Controls whether a service should be created. | `bool` | `null` | no |
+| <a name="input_create_service"></a> [create\_service](#input\_create\_service) | (Optional) Controls whether a service should be created. | `bool` | `null` | no |
 
 ## Outputs
 
