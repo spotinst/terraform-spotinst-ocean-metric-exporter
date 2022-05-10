@@ -1,4 +1,5 @@
-// spotinst/ocean-metrics-exporter
+// spotinst/ocean-metric-exporter
+
 #tf parameters
 variable "create_metrics_exporter" {
   type        = bool
