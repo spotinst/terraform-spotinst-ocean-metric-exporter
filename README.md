@@ -1,4 +1,4 @@
-# Spot Ocean Metrics Exporter Terraform Module
+# Spot Ocean Metric Exporter Terraform Module
 
 Short description of the module.
 
