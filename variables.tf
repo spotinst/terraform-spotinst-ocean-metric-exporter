@@ -58,7 +58,7 @@ variable "config_map_name" {
 
 variable "ca_bundle_secret_name" {
   type        = string
-  description = "(Optional) caBundle Secret name."
+  description = "(Optional) CA bundle secret name."
   default     = null
 }
 
