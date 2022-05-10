@@ -1,6 +1,5 @@
 // spotinst/ocean-metric-exporter
 
-#tf parameters
 variable "create_metrics_exporter" {
   type        = bool
   description = "Controls whether the Spot Ocean Metrics Exporter should be created"
