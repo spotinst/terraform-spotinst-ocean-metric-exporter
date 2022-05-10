@@ -2,7 +2,7 @@
 
 variable "create_metric_exporter" {
   type        = bool
-  description = "Controls whether the Spot Ocean Metrics Exporter should be created"
+  description = "Controls whether the Spot Ocean Metric Exporter should be created"
   default     = true
 }
 
