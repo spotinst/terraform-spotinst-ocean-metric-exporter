@@ -83,7 +83,7 @@ resource "helm_release" "this" {
     for_each = var.create_service != null ? ["create_service"] : []
     content {
       name  = "service.create"
-      value = var.service_create
+      value = var.create_service
     }
   }
 }
