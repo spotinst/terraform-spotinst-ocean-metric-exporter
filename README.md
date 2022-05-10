@@ -23,7 +23,7 @@ Short description of the module.
 
 ```hcl
 module "ocean-metric-exporter" {
-  source = "spotinst/ocean-metrics-exporter/spotinst"
+  source = "spotinst/ocean-metric-exporter/spotinst"
   
 }
 ```
