@@ -60,7 +60,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_ca_bundle_secret_name"></a> [ca\_bundle\_secret\_name](#input\_ca\_bundle\_secret\_name) | (Optional) caBundle Secret name. | `string` | `null` | no |
+| <a name="input_ca_bundle_secret_name"></a> [ca\_bundle\_secret\_name](#input\_ca\_bundle\_secret\_name) | (Optional) CA bundle secret name. | `string` | `null` | no |
 | <a name="input_chart"></a> [chart](#input\_chart) | Chart name to be deployed | `string` | `"ocean-metric-exporter"` | no |
 | <a name="input_chart_namespace"></a> [chart\_namespace](#input\_chart\_namespace) | Chart namespace to install the release into | `string` | `"spot-system"` | no |
 | <a name="input_chart_repository"></a> [chart\_repository](#input\_chart\_repository) | Repository URL where to locate the Spot Ocean Metrics Exporter chart | `string` | `"https://charts.spot.io"` | no |
