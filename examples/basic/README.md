@@ -26,7 +26,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_ocean-metrics-exporter"></a> [ocean-metrics-exporter](#module\_ocean-metrics-exporter) | ../.. | n/a |
+| <a name="module_ocean-metric-exporter"></a> [ocean-metric-exporter](#module\_ocean-metric-exporter) | ../.. | n/a |
 
 ## Resources
 
