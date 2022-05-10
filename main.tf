@@ -1,5 +1,4 @@
 resource "helm_release" "this" {
-  #  tf parameters
   count = var.create_metrics_exporter ? 1 : 0
   #  helm parameters
   name             = var.chart
