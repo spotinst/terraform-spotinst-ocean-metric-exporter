@@ -91,7 +91,7 @@ variable "image_pull_secrets" {
   default     = null
 }
 
-variable "service_create" {
+variable "create_service" {
   type        = bool
   description = "(Optional) Controls whether a service should be created."
   default     = null
