@@ -1,4 +1,5 @@
-// spotinst/ocean-metrics-exporter
+// spotinst/ocean-metric-exporter
+
 variable "image_tag" {
   type        = string
   description = "(Optional) Image tag"
