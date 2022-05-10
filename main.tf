@@ -82,7 +82,7 @@ resource "helm_release" "this" {
   }
 
   dynamic "set" {
-    for_each = var.service_create != null ? ["service_create"] : []
+    for_each = var.create_service != null ? ["create_service"] : []
     content {
       name  = "service.create"
       value = var.service_create
