@@ -1,6 +1,5 @@
 resource "helm_release" "this" {
   count = var.create_metrics_exporter ? 1 : 0
-  #  helm parameters
   name             = var.chart
   chart            = var.chart
   repository       = var.chart_repository
