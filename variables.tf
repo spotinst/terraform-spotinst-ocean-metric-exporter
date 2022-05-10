@@ -6,7 +6,6 @@ variable "create_metrics_exporter" {
   default     = true
 }
 
-#heml chart parameters
 variable "create_namespace" {
   type        = bool
   description = "Controls whether the namespace should be created if it does not yet exist"
