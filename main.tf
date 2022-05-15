@@ -1,5 +1,5 @@
 resource "helm_release" "this" {
-  count = var.create_metrics_exporter ? 1 : 0
+  count            = var.create_metric_exporter ? 1 : 0
   name             = var.chart
   chart            = var.chart
   repository       = var.chart_repository

@@ -68,6 +68,7 @@ No modules.
 | <a name="input_config_map_name"></a> [config\_map\_name](#input\_config\_map\_name) | (Optional) ConfigMap name. | `string` | `null` | no |
 | <a name="input_create_metric_exporter"></a> [create\_metric\_exporter](#input\_create\_metric\_exporter) | Controls whether the Spot Ocean Metric Exporter should be created | `bool` | `true` | no |
 | <a name="input_create_namespace"></a> [create\_namespace](#input\_create\_namespace) | Controls whether the namespace should be created if it does not yet exist | `bool` | `true` | no |
+| <a name="input_create_service"></a> [create\_service](#input\_create\_service) | (Optional) Controls whether a service should be created. | `bool` | `null` | no |
 | <a name="input_image_pull_policy"></a> [image\_pull\_policy](#input\_image\_pull\_policy) | (Optional) Image pull policy. | `string` | `null` | no |
 | <a name="input_image_pull_secrets"></a> [image\_pull\_secrets](#input\_image\_pull\_secrets) | (Optional) Image pull secrets. | `string` | `null` | no |
 | <a name="input_image_repository"></a> [image\_repository](#input\_image\_repository) | (Optional) Image repository. | `string` | `null` | no |
@@ -75,7 +76,6 @@ No modules.
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | (Optional) Kubernetes namespace where the components should be installed. | `string` | `null` | no |
 | <a name="input_replica_count"></a> [replica\_count](#input\_replica\_count) | (Optional) Replicas. | `number` | `null` | no |
 | <a name="input_secret_name"></a> [secret\_name](#input\_secret\_name) | (Optional) Secret name | `string` | `null` | no |
-| <a name="input_create_service"></a> [create\_service](#input\_create\_service) | (Optional) Controls whether a service should be created. | `bool` | `null` | no |
 
 ## Outputs
 
