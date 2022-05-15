@@ -1,11 +1,5 @@
-// spotinst/[NAME]
-
-variable "spotinst_token" {
+variable "image_tag" {
   type        = string
-  description = "Spot Personal Access token"
-}
-
-variable "spotinst_account" {
-  type        = string
-  description = "Spot account ID"
+  description = "Image tag."
+  default     = null
 }
