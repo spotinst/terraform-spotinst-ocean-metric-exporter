@@ -97,7 +97,7 @@ variable "create_service" {
 variable "metricsconfiguration_categories" {
   type        = list(string)
   description = "List of Categories to enable - if empty will get no metrics. Additional possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=categories"
-  default     = ["scaling","cost_analysis"]
+  default     = ["scaling"]
 }
 
 variable "metricsconfiguration_allow_metrics" {
