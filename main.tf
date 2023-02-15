@@ -86,4 +86,12 @@ resource "helm_release" "this" {
       value = var.create_service
     }
   }
+
+  dynamic "set" {
+    for_each = var.metricsconfiguration_categories != null ? ["metricsconfiguration_categories"] : []
+    content {
+      name  = "metricsConfiguration.categories"
+      value = "{${join(",", var.metricsconfiguration_categories)}}"
+    }
+  }
 }

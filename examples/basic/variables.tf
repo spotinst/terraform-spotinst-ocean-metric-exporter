@@ -1,5 +1,5 @@
-variable "image_tag" {
+variable "namespace" {
   type        = string
-  description = "Image tag."
-  default     = null
+  description = "Chart namespace to install the release into."
+  default     = "kube-system"
 }
