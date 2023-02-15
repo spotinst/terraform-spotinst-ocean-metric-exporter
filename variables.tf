@@ -93,3 +93,33 @@ variable "create_service" {
   description = "Controls whether a service should be created."
   default     = null
 }
+
+variable "metricsconfiguration_categories" {
+  type        = list(string)
+  description = "List of Categories to enable - if empty will get no metrics. Additional possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=categories"
+  default     = ["scaling","cost_analysis"]
+}
+
+variable "metricsconfiguration_allow_metrics" {
+  type        = list(string)
+  description = "List of Metrics to allow - if empty will get everything. Shouldn't be used with `denyMetrics`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=metrics"
+  default     = null
+}
+
+variable "metricsconfiguration_deny_metrics" {
+  type        = list(string)
+  description = "List of Metrics to deny - if empty will get everything. Shouldn't be used with `allowMetrics`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=metrics"
+  default     = null
+}
+
+variable "metricsconfiguration_allow_labels" {
+  type        = list(string)
+  description = "List of Labels to allow - if empty will get everything. Shouldn't be used with `denyLabels`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=labels"
+  default     = null
+}
+
+variable "metricsconfiguration_deny_labels" {
+  type        = list(string)
+  description = "List of Labels to deny - if empty will get everything. Shouldn't be used with `allowLabels`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=labels"
+  default     = null
+}
