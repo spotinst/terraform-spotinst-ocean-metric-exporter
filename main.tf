@@ -86,4 +86,44 @@ resource "helm_release" "this" {
       value = var.create_service
     }
   }
+
+  dynamic "set" {
+    for_each = var.metricsconfiguration_categories != null ? ["metricsconfiguration_categories"] : []
+    content {
+      name  = "metricsConfiguration.categories"
+      value = "{${join(",", var.metricsconfiguration_categories)}}"
+    }
+  }
+
+  dynamic "set" {
+    for_each = var.metricsconfiguration_allow_metrics != null ? ["metricsconfiguration_allow_metrics"] : []
+    content {
+      name  = "metricsConfiguration.allowMetrics"
+      value = "{${join(",", var.metricsconfiguration_allow_metrics)}}"
+    }
+  }
+
+  dynamic "set" {
+    for_each = var.metricsconfiguration_deny_metrics != null ? ["metricsconfiguration_deny_metrics"] : []
+    content {
+      name  = "metricsConfiguration.denyMetrics"
+      value = "{${join(",", var.metricsconfiguration_deny_metrics)}}"
+    }
+  }
+
+  dynamic "set" {
+    for_each = var.metricsconfiguration_allow_labels != null ? ["metricsconfiguration_allow_labels"] : []
+    content {
+      name  = "metricsConfiguration.allowLabels"
+      value = "{${join(",", var.metricsconfiguration_allow_labels)}}"
+    }
+  }
+
+  dynamic "set" {
+    for_each = var.metricsconfiguration_deny_labels != null ? ["metricsconfiguration_deny_labels"] : []
+    content {
+      name  = "metricsConfiguration.denyLabels"
+      value = "{${join(",", var.metricsconfiguration_deny_labels)}}"
+    }
+  }
 }
