@@ -75,6 +75,7 @@ No modules.
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | Kubernetes namespace where the components should be installed. | `string` | `null` | no |
 | <a name="input_replica_count"></a> [replica\_count](#input\_replica\_count) | Replicas. | `number` | `null` | no |
 | <a name="input_secret_name"></a> [secret\_name](#input\_secret\_name) | Secret name. | `string` | `null` | no |
+| <a name="input_metricsconfiguration_categories"></a> [metricsconfiguration\_categories](#input\_metricsconfiguration\_categories) | List of Categories to enable - if empty will get no metrics. Additional possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=categories. | `Array[string]` | `["scaling"]` | no |
 
 ## Outputs
 
