@@ -4,8 +4,12 @@
 
 
 <a name="v0.2.0"></a>
-## [v0.2.0] (January 1, 0001)
+## [v0.2.0] (February 16, 2023)
 
+- doc: Update README.md ([#3](https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/issues/3))
+- Fix: Updated chart to 1.0.3 version ([#2](https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/issues/2))
+- Create CODEOWNERS
+- docs(changelog): v0.1.0
 
 
 <a name="v0.1.0"></a>
