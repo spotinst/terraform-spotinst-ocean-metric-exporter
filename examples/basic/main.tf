@@ -7,6 +7,6 @@ provider "helm" {
 module "ocean-metric-exporter" {
   source            = "../.."
   image_pull_policy = "Always"
-  image_tag         = "1.0.0-beta"
+  image_tag         = "1.0.2"
   namespace = "kube-system"
 }
