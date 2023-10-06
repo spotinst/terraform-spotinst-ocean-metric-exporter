@@ -128,11 +128,21 @@ resource "helm_release" "this" {
   }
 
 
-
-   resources {
-      limits   = var.resources_limits
-      requests = var.resources_requests
+dynamic "set" {
+    for_each = var.resources_limits != null ? ["resources_limits"] : []
+    content {
+      name   = "resources_limits"
+      value = var.resources_limits
    }
+   }
+
+   dynamic "set" {
+       for_each = var.resources_requests != null ? ["resources_requests"] : []
+       content {
+         name   = "resources_requests"
+         value = var.resources_requests
+      }
+      }
 
 
 
