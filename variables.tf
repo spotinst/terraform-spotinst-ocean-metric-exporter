@@ -147,23 +147,23 @@ variable "resources_requests" {
 variable "resources_limits_cpu" {
   type        = string
   description = "CPU Limits"
-  default     = 300m
+  default     = "300m"
 }
 
 variable "resources_limits_memory" {
   type        = string
   description = "Memory Limits"
-  default     = 300Mi
+  default     = "300Mi"
 }
 
 variable "resources_requests_cpu" {
   type        = string
   description = "CPU Requests"
-  default     = 250m
+  default     = "250m"
 }
 
 variable "resources_requests_memory" {
   type        = string
   description = "Memory Requests"
-  default     = 500Mi
+  default     = "500Mi"
 }
