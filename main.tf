@@ -127,16 +127,16 @@ resource "helm_release" "this" {
     }
   }
 
-/*
+
 
    resources {
       limits   = var.resources_limits
       requests = var.resources_requests
    }
- */
 
 
-  dynamic "set" {
+
+  /* dynamic "set" {
     for_each = var.resources_limits_cpu != null ? ["resources_limits_cpu"] : []
     content {
       name  = "resources_limits_cpu"
@@ -166,5 +166,5 @@ resource "helm_release" "this" {
       name  = "resources_requests_memory"
       value = var.resources_requests_memory
     }
-  }
+  } */
 }
