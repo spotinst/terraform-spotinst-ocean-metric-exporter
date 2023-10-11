@@ -3,10 +3,19 @@
 
 
 
+<a name="v0.4.0"></a>
+## [v0.4.0] (October 11, 2023)
+
+- Added support for  `limits` and `requests` in `resources`. ([#7](https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/issues/7))
+- [src] removed common workflow
+- [src] added common workflow
+
+
 <a name="v0.3.0"></a>
 ## [v0.3.0] (April 5, 2023)
 
-- updated chart version to 1.0.4. ([#5](https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/issues/5))
+- Changelog update ([#6](https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/issues/6))
+- updated chart version. ([#5](https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/issues/5))
 
 
 <a name="v0.2.0"></a>
@@ -26,6 +35,7 @@
 - Initial commit
 
 
-[Unreleased]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.4.0...HEAD
+[v0.4.0]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.2.0...v0.3.0
 [v0.2.0]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.1.0...v0.2.0
