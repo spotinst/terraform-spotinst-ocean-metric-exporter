@@ -139,7 +139,6 @@ resource "helm_release" "this" {
     }
     type  = "map"
   }
-}
 
 /*dynamic "set" {
     for_each = var.resources_limits != null ? ["resources_limits"] : []
