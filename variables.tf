@@ -159,7 +159,7 @@ variable "resources_limits_memory" {
 variable "resources_requests_cpu" {
   type        = string
   description = "CPU Requests"
-  default     = "250m"
+  default     = "260m"
 }
 
 variable "resources_requests_memory" {
