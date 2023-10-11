@@ -126,4 +126,35 @@ resource "helm_release" "this" {
       value = "{${join(",", var.metricsconfiguration_deny_labels)}}"
     }
   }
+
+  dynamic "set" {
+    for_each = var.resources_limits_cpu != null ? ["resources_limits_cpu"] : []
+    content {
+      name  = "resources.limits.cpu"
+      value = var.resources_limits_cpu
+    }
+  }
+  dynamic "set" {
+    for_each = var.resources_limits_memory != null ? ["resources_limits_memory"] : []
+    content {
+      name  = "resources.limits.memory"
+      value = var.resources_limits_memory
+    }
+  }
+
+  dynamic "set" {
+    for_each = var.resources_requests_cpu != null ? ["resources_requests_cpu"] : []
+    content {
+      name  = "resources.requests.cpu"
+      value = var.resources_requests_cpu
+    }
+  }
+
+  dynamic "set" {
+    for_each = var.resources_requests_memory != null ? ["resources_requests_memory"] : []
+    content {
+      name  = "resources.requests.memory"
+      value = var.resources_requests_memory
+    }
+  }
 }

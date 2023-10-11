@@ -123,3 +123,29 @@ variable "metricsconfiguration_deny_labels" {
   description = "List of Labels to deny - if empty will get everything. Shouldn't be used with `allowLabels`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=labels"
   default     = null
 }
+
+variable "resources_limits_cpu" {
+  type        = string
+  description = "Specifies the maximum amount of cpu resources allowed"
+  default     = "500m"
+}
+
+variable "resources_limits_memory" {
+  type        = string
+  description = "Specifies the maximum amount of memory resources allowed"
+  default     = "500Mi"
+}
+
+variable "resources_requests_cpu" {
+  type        = string
+  description = "Specifies the minimum amount of cpu resources required"
+  default     = "100m"
+}
+
+variable "resources_requests_memory" {
+  type        = string
+  description = "Specifies the minimum amount of memory resources required"
+  default     = "50Mi"
+}
+
+
