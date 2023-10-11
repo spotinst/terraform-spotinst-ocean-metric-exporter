@@ -126,6 +126,7 @@ resource "helm_release" "this" {
       value = "{${join(",", var.metricsconfiguration_deny_labels)}}"
     }
   }
+
   dynamic "set" {
     for_each = var.resources_requests_cpu != null ? ["resources_requests_cpu"] : []
     content {
@@ -134,74 +135,25 @@ resource "helm_release" "this" {
     }
   }
 
-
-/*  resources_requests{
-    cpu    = "0.6"
-    memory = "513Mi"
-  }*/
-
-  /*set {
-    name  = "resources_requests"
-    value = {
-      cpu    = "0.6"
-      memory = "513Mi"
-    }
-    type  = "map"
-  }*/
-
-  /*set {
-    name  = "resources_requests"
-    value = var.resources_requests
-    type  = "map"
-  }*/
-
-/*dynamic "set" {
-    for_each = var.resources_limits != null ? ["resources_limits"] : []
-    content {
-      name   = "resources_limits"
-      value = var.resources_limits
-   }
-   }
-
-   dynamic "set" {
-       for_each = var.resources_requests != null ? ["resources_requests"] : []
-       content {
-         name   = "resources_requests"
-         value = var.resources_requests
-      }
-      }*/
-
-
-
-  /* dynamic "set" {
-    for_each = var.resources_limits_cpu != null ? ["resources_limits_cpu"] : []
-    content {
-      name  = "resources_limits_cpu"
-      value = var.resources_limits_cpu
-    }
-  }
-
-  dynamic "set" {
-    for_each = var.resources_limits_memory != null ? ["resources_limits_memory"] : []
-    content {
-      name  = "resources_limits_memory"
-      value = var.resources_limits_memory
-    }
-  }
-
-  dynamic "set" {
-    for_each = var.resources_requests_cpu != null ? ["resources_requests_cpu"] : []
-    content {
-      name  = "resources_requests_cpu"
-      value = var.resources_requests_cpu
-    }
-  }
-
   dynamic "set" {
     for_each = var.resources_requests_memory != null ? ["resources_requests_memory"] : []
     content {
-      name  = "resources_requests_memory"
+      name  = "resources.requests.memory"
       value = var.resources_requests_memory
     }
-  } */
+  }
+  dynamic "set" {
+    for_each = var.resources_limits_memory != null ? ["resources_limits_memory"] : []
+    content {
+      name  = "resources.limits.memory"
+      value = var.resources_limits_memory
+    }
+  }
+  dynamic "set" {
+    for_each = var.resources_limits_memory != null ? ["resources_limits_memory"] : []
+    content {
+      name  = "resources.limits.memory"
+      value = var.resources_limits_memory
+    }
+  }
 }

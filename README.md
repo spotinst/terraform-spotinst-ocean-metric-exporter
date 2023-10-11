@@ -80,7 +80,10 @@ No modules.
 | <a name="input_metricsconfiguration_deny_metrics"></a> [metricsconfiguration\_deny_metrics](#input\_metricsconfiguration\_deny_metrics) | List of Metrics to deny - if empty will get everything. Shouldn't be used with `allowMetrics`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=metrics. | `Array[string]` | `null` | no |
 | <a name="input_metricsconfiguration_allow_labels"></a> [metricsconfiguration\_allow_labels](#input\_metricsconfiguration\_allow_labels) | List of Labels to allow - if empty will get everything. Shouldn't be used with `denyLabels`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=labels. | `Array[string]` | `null` | no |
 | <a name="input_metricsconfiguration_deny_labels"></a> [metricsconfiguration\_deny_labels](#input\_metricsconfiguration\_deny_labels) | List of Labels to deny - if empty will get everything. Shouldn't be used with `allowLabels`. Possible values can be found here: https://docs.spot.io/ocean/tools-and-integrations/prometheus/scrape?id=labels. | `Array[string]` | `null` | no |
-
+| <a name="input_resources_limits_cpu"></a> [resources\_limits\_cpu](#input\_resources\_limits\_cpu) | Specifies the maximum amount of cpu resources allowed | `string` | `null` | no |
+| <a name="input_resources_limits_memory"></a> [resources\_limits\_memory](#input\_resources\_limits\_memory) | Specifies the maximum amount of memory resources allowed | `string` | `null` | no |
+| <a name="input_resources_limits_memory"></a> [resources\_requests\_cpu](#input\_resources\_requests\_cpu) | Specifies the minimum amount of cpu resources required | `string` | `null` | no |
+| <a name="input_resources_requests_memory"></a> [resources\_requests\_memory](#input\_resources\_requests\_memory) | Specifies the minimum amount of memory resources required | `string` | `null` | no |
 ## Outputs
 
 No outputs.
