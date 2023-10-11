@@ -131,12 +131,18 @@ resource "helm_release" "this" {
     memory = "513Mi"
   }*/
 
-  set {
+  /*set {
     name  = "resources_requests"
     value = {
       cpu    = "0.6"
       memory = "513Mi"
     }
+    type  = "map"
+  }*/
+
+  set {
+    name  = "resources_requests"
+    value = var.resources_requests
     type  = "map"
   }
 
