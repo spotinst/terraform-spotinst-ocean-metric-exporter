@@ -133,7 +133,7 @@ variable "resources_limits" {
       memory = "512Mi"
     }
 }
-
+/*
 variable "resources_requests" {
   type        = map(any)
   description = "Specifies the definition of the minimum amount of compute resources required"
@@ -142,9 +142,8 @@ variable "resources_requests" {
       cpu    = "0.5"
       memory = "512Mi"
     }
-}
+}*/
 
-/*
 variable "resources_limits_cpu" {
   type        = string
   description = "CPU Limits"
@@ -167,4 +166,6 @@ variable "resources_requests_memory" {
   type        = string
   description = "Memory Requests"
   default     = "500Mi"
-} */
+}
+
+

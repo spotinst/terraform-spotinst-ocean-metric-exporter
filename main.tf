@@ -126,6 +126,15 @@ resource "helm_release" "this" {
       value = "{${join(",", var.metricsconfiguration_deny_labels)}}"
     }
   }
+  dynamic "set" {
+    for_each = var.resources_requests_cpu != null ? ["resources_requests_cpu"] : []
+    content {
+      name  = "resources.requests.cpu"
+      value = var.resources_requests_cpu
+    }
+  }
+
+
 /*  resources_requests{
     cpu    = "0.6"
     memory = "513Mi"
@@ -140,11 +149,11 @@ resource "helm_release" "this" {
     type  = "map"
   }*/
 
-  set {
+  /*set {
     name  = "resources_requests"
     value = var.resources_requests
     type  = "map"
-  }
+  }*/
 
 /*dynamic "set" {
     for_each = var.resources_limits != null ? ["resources_limits"] : []
