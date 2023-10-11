@@ -150,10 +150,10 @@ resource "helm_release" "this" {
     }
   }
   dynamic "set" {
-    for_each = var.resources_limits_memory != null ? ["resources_limits_memory"] : []
+    for_each = var.resources_limits_cpu != null ? ["resources_limits_cpu"] : []
     content {
-      name  = "resources.limits.memory"
-      value = var.resources_limits_memory
+      name  = "resources.limits.cpu"
+      value = var.resources_limits_cpu
     }
   }
 }
