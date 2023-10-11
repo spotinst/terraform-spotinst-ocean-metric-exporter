@@ -126,9 +126,13 @@ resource "helm_release" "this" {
       value = "{${join(",", var.metricsconfiguration_deny_labels)}}"
     }
   }
+  resources_requests{
+    cpu    = "0.6"
+    memory = "513Mi"
+  }
 
 
-dynamic "set" {
+/*dynamic "set" {
     for_each = var.resources_limits != null ? ["resources_limits"] : []
     content {
       name   = "resources_limits"
@@ -142,7 +146,7 @@ dynamic "set" {
          name   = "resources_requests"
          value = var.resources_requests
       }
-      }
+      }*/
 
 
 
