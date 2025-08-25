@@ -1,6 +1,8 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+- Upgraded chart version from 1.0.4 to 1.1.1.
+
 
 
 <a name="v0.4.0"></a>
