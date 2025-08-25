@@ -1,8 +1,11 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
-- Upgraded chart version from 1.0.4 to 1.1.1.
 
+<a name="v0.5.0"></a>
+## [v0.5.0] (August 25, 2025)
+
+- Upgraded chart version from 1.0.4 to 1.1.1. ([#9](https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/pull/9))
 
 
 <a name="v0.4.0"></a>
@@ -37,7 +40,8 @@
 - Initial commit
 
 
-[Unreleased]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.5.0...HEAD
+[v0.5.0]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.2.0...v0.3.0
 [v0.2.0]: https://github.com/spotinst/terraform-spotinst-ocean-metric-exporter/compare/v0.1.0...v0.2.0
